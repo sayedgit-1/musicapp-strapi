@@ -1,7 +1,9 @@
-export default ({env}) => ({
-    'users-permissions': {
-    config: {
-      jwtSecret: 'OrnsZ/TkM5aodhbm7nloRA=='
-    }
-  }
-});
+export default () => ({
+    graphql: {
+      enabled: false,  // Enable GraphQL
+    },
+    email: {
+      enabled: false,  // Disable Email
+    },
+  });
+  

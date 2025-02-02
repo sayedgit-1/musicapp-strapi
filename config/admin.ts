@@ -1,13 +1,13 @@
 export default ({ env }) => ({
   auth: {
-    secret: env('ADMIN_JWT_SECRET'),
+    secret: process.env.ADMIN_JWT_SECRET || 'IX0X2Js22ZG81LnoR7R9Qz7/8aZM+FucCCYchCaDuo=',
   },
   apiToken: {
-    salt: env('API_TOKEN_SALT'),
+    salt: process.env.API_TOKEN_SALT || 'bGSfnByXlktSIpn7rr0gTg4L+IsTRtdHsTXQfRemDjM=',
   },
   transfer: {
     token: {
-      salt: env('TRANSFER_TOKEN_SALT'),
+      salt: process.env.TRANSFER_TOKEN_SALT || 'MdlIglclzhjJGA7t246vKLkpW7d5VqmSJYop+srPiX0=',
     },
   },
   flags: {
